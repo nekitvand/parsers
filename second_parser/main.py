@@ -17,7 +17,7 @@ def refined(s):
 
 def write_csv(data):
     with open('plugins.csv', 'a') as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f,delimiter=',')
 
         writer.writerow((data['name'],
                          data['url'],
